@@ -1,13 +1,18 @@
-#AUTHOR: James Tanner
-#COURSE: COS 350 - Systems Programming
-#PURPOSE: Program 4
+# AUTHOR: James Tanner
+# COURSE: COS 350 - Systems Programming
+# PURPOSE: Program 4
+
+COMP=gcc
+FLAGS=-g -pg
 
 scroll: scroll.o
-	gcc scroll.o -o scroll
+	$(COMP) $(FLAGS) scroll.o -o scroll
 
 scroll.o: scroll.c
-	gcc -c  scroll.c
+	gcc -c $(FLAGS) scroll.c
 
+man: manpage
+	man ./manpage
+   
 clean:
 	rm -f *.o
-	rm -rf cos350/submit/*

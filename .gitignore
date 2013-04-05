@@ -3,3 +3,6 @@
 
 # Executable
 scroll
+
+# Text files
+*.txt
