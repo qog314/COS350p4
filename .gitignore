@@ -1,8 +1,0 @@
-# Object files
-*.o
-
-# Executable
-scroll
-
-# Text files
-*.txt
